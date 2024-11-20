@@ -1,7 +1,11 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(layout="wide")
+st.set_page_config(
+    page_title="Performace dos estudantes",
+    page_icon="📊",
+    layout="wide"
+)
 
 df_students_performance = pd.read_csv("./datasets/Cleaned_Students_Performance.csv")
 
