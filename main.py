@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 
 # Configuração da página da aplicação web
 st.set_page_config(
@@ -10,6 +11,9 @@ st.set_page_config(
 
 # Carregando o arquivo .csv
 df_students_performance = pd.read_csv("./datasets/Cleaned_Students_Performance.csv")
+
+# Substituindo os valores 0 por 'feminine' e 1 por 'masculine' na coluna 'gender'
+df_students_performance['gender'] = df_students_performance['gender'].replace({0: 'feminine', 1: 'masculine'})
 
 # Configurando o valor máximo e o mínimo de math_score no slider
 math_score_max = df_students_performance["math_score"].max()
