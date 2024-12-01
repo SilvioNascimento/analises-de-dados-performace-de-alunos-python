@@ -34,3 +34,12 @@ max_writing_score = st.sidebar.slider("Writing Score", writing_score_min, writin
 df_scores = df_students_performance[(df_students_performance["math_score"] <= max_math_score) & (df_students_performance["reading_score"] <= max_reading_score) & (df_students_performance["writing_score"] <= max_writing_score)]
 df_scores
 
+
+# Criando gráficos básicos em relação com as pontuações de matemática
+
+# Agrupando por 'math_score' e 'gender' para incluir a coluna 'gender'
+df_grouped_math = df_scores.groupby(['math_score', 'gender']).size().reset_index(name='count')
+
+# Criando o gráfico de barras
+fig1 = px.bar(df_grouped_math, x="math_score", y="count", color="gender", title="Gráfico de barras de pontuação de matemática por contagem")
+fig1
