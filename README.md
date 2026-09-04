@@ -32,23 +32,33 @@ Clone o repositório:
 ```bash
 git clone https://github.com/SilvioNascimento/analises-de-dados-performace-de-alunos-python.git
 ```
-
-Instalando as dependências:
-* streamlit
-    ```bash
-    pip install streamlit
-    ```
-
-* pandas
-    ```bash
-    pip install pandas
-    ```
-
-* plotly
-    ```bash
-    pip install plotly
-    ```
   
+Criar o Ambiente Virtual isolado:
+
+```bash
+python -m venv .venv
+```
+
+---
+
+Ativar o Ambiente Virtual
+
+```bash
+.venv\Scripts\activate.bat
+```
+
+- **Verificação:** Se funcionou, seu terminal mostrará o prefixo (.venv) antes do caminho da pasta.
+
+---
+
+Instalar as bibliotecas que o projeto utiliza
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
 Inicializando o _main.py_ ou pelo terminal:
 
 ```bash
@@ -59,4 +69,12 @@ Ou executando pelo programa _runner.py_:
 
 ```bash
 python runner.py
+```
+
+---
+
+Desativar o Ambiente (no terminal)
+
+```bash
+deactivate
 ```
