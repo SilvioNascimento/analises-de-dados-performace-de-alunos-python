@@ -43,9 +43,17 @@ python -m venv .venv
 
 Ativar o Ambiente Virtual
 
-```bash
-.venv\Scripts\activate.bat
-```
+- Windows (CMD / PowerShell):
+
+    ```bash
+    .venv\Scripts\activate.bat
+    ```
+
+- Linux/macOS:
+  
+    ```bash
+    source .venv/bin/activate
+    ```
 
 - **Verificação:** Se funcionou, seu terminal mostrará o prefixo (.venv) antes do caminho da pasta.
 
