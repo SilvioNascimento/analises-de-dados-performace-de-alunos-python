@@ -9,6 +9,9 @@ st.set_page_config(
     layout="wide"
 )
 
+# Título da tabela
+st.subheader("Tabela da Performace dos estudantes")
+
 # Carregando o arquivo .csv
 df_students_performance = pd.read_csv("./datasets/Cleaned_Students_Performance.csv")
 
