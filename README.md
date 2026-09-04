@@ -12,7 +12,7 @@ O projeto em si é um aplicativo web que analisa os dados da performace de aluno
 - **Tabela de Dados Filtrados:** Exibição detalhada dos alunos que cumprem os critérios selecionados nos filtros.
 - **Gráficos de Distribuição:** Visualização gráfica interativa (utilizando Plotly) apresentando a contagem e distribuição das pontuações segmentadas por gênero (_masculino e feminino_).
   
-  ![Demonstração da Applicação](assets/tela_projeto_em_execucao.jpg)
+  ![Demonstração da Aplicação](assets/tela_projeto_em_execucao.jpg)
 
 ---
 
