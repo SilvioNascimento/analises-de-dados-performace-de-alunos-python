@@ -37,7 +37,6 @@ max_writing_score = st.sidebar.slider("Writing Score", writing_score_min, writin
 df_scores = df_students_performance[(df_students_performance["math_score"] <= max_math_score) & (df_students_performance["reading_score"] <= max_reading_score) & (df_students_performance["writing_score"] <= max_writing_score)]
 df_scores
 
-
 # Criando gráficos básicos em relação com as pontuações de matemática
 
 # Agrupando por 'math_score' e 'gender' para incluir a coluna 'gender'
