@@ -1,0 +1,5 @@
+# Pastas
+.idea
+
+# Configurações sensiveis
+.venv/
